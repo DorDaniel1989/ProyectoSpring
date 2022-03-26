@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hdiv="http://www.hdiv.org/schema/hdiv"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.hdiv.org/schema/hdiv http://www.hdiv.org/schema/hdiv/hdiv.xsd">
+
+	<!-- Configuracion base de HDIV -->
+	<hdiv:config errorPage="/error" excludedExtensions="css,png,gif,js,woff">
+		<hdiv:startPages>,/</hdiv:startPages>
+		<hdiv:startPages>/api/.*</hdiv:startPages>
+		<hdiv:startPages>/exception/.*</hdiv:startPages>
+		<hdiv:startPages>/timeout/.*</hdiv:startPages>
+		<hdiv:startPages>/logout-success</hdiv:startPages>
+		<hdiv:startPages>/izfe-app-info</hdiv:startPages>
+	</hdiv:config>
+
+	<!-- Validacion propia de editables -->
+	<hdiv:editableValidations>
+		<hdiv:validationRule url="/.*" />
+	</hdiv:editableValidations>
+
+</beans>

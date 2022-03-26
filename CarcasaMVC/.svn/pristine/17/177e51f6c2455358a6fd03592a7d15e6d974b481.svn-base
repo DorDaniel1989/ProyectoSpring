@@ -1,0 +1,146 @@
+
+Acciones = Acciones
+
+AplicacionEjemploIZFE = Aplicaci\u00F3n de ejemplo del Framework IZFE
+
+CatalogoComponentes = Cat\u00E1logo de componentes
+
+CrearCuenta = Crear cuenta
+
+Cuentas = Cuentas
+
+DescargaPdf = Descarga en Pdf
+
+DescargaXml = Descarga en Xml
+
+DetalleCuenta = Detalle cuenta
+
+ErrorEnAplicacion = Ha habido un error en la aplicaci\u00F3n
+
+GestionCuentas = Gesti\u00F3n de cuentas
+
+Guia = Gu\u00EDa
+
+GuiaRapida = Gu\u00EDa r\u00E1pida
+
+GuiaRapidaFrameworkIZFE = Gu\u00EDa r\u00E1pida del Framework de IZFE
+
+Inicio = Inicio
+
+Menu = Men\u00FA
+
+NotEmpty = {0} no puede ser un campo vac\u00EDo
+
+NotNull = {0} no puede ser un campo null
+
+Pruebas = Pruebas
+
+RestTample.externa = RestTemplate (URL externa)
+RestTample.interna = RestTemplate (URL interna, retardo=10 seg.)
+RestTample.ssl     = RestTemplate (HTTPS)
+RestTample.timeout = RestTemplate (timeout)
+
+VersionEscritorio = Versi\u00F3n escritorio
+
+VersionMovil = Versi\u00F3n M\u00F3vil
+
+anterior = Anterior
+
+cambiarLocale = Cambiar idioma
+
+confirmacion.password.incorrecto = Password y confirmaci\u00F3n no coinciden
+
+crearCuenta = Crear nueva cuenta de usuario
+
+cuenta.apellido     = Apellido
+cuenta.correo       = Correo
+cuenta.email        = Correo
+cuenta.extra        = Extra
+cuenta.fcreacion    = Fecha
+cuenta.idUsuario    = Identificador
+cuenta.nombre       = Nombre
+cuenta.password     = Nuevo Password
+cuenta.telefono     = Tel\u00E9fono
+
+cuentaCreadaMessage = Cuenta creada satisfactoriamente
+
+cuentas.mas = M\u00E1s cuentas
+
+datosUsuario = Datos de usuario
+
+disculpenMolestias = Disculpen las molestias
+
+erroresValidacion = Hay errores de validaci\u00F3n
+
+errors.confirmacion.password.incorrecto = Password y confirmaci\u00F3n no coinciden
+errors.idusuario.existente              = El id usuario ya est\u00E1 registrado
+
+format.currency   = #,##0.00 $
+format.date       = EEE, MMM d, yyyy
+format.date.short = dd/MM/yyyy
+
+idPerfil = Perfil
+
+idioma = Idioma
+
+informacionCuenta = Informaci\u00F3n sobre la cuenta
+
+informacionPerfil = Informacion Perfil
+
+#informes
+informe.apellido       = Apellido
+informe.cabecera       = Gu\u00EDa R\u00E1pida
+informe.email          = Correo
+informe.fecha.creacion = Fecha de creaci\u00F3n
+informe.nombre         = Nombre
+informe.telefono       = Tel\u00E9fono
+informe.titulo         = T\u00EDtulo "Gu\u00EDa R\u00E1pida"
+
+inicio = Inicio
+
+listaVacia = Lista vac\u00EDa, no hay elementos que mostrar
+
+listadoCuentas = Listado de cuentas
+
+listadoCuentasDec = Lista con las cuentas activas actualmente en la aplicaci\u00F3n
+
+logout = Cerrar sesi\u00F3n
+
+methodInvocation = Se ha producido un error en la conversi\u00F3n
+
+myDato = (+34){0}
+
+nuevaCuenta = Crear cuenta
+
+previo = Previo
+
+rapida = r\u00E1pida
+
+registrar = Nueva cuenta
+
+registrar.wizard = Nueva cuenta wizard
+
+repetirPassword = Repetir Password
+
+rest.duracion       = Duraci\u00F3n de la petici\u00F3n REST (en segundos):
+rest.errorMessage   = Mensaje de error:
+rest.responseStatus = Status Code:
+rest.url            = URL utilizada:
+
+sesionCerrada = Se ha cerrado la sesi\u00F3n
+
+siguiente = Siguiente
+
+subinforme.titulo = Prueba de Subreport
+
+titulo.informe = Ejemplo de informe
+
+# Mensajes de error
+typeMismatch.cuenta.telefono = El n\u00FAmero de tel\u00E9fono debe ser con formato (+34)987654321
+typeMismatch.java.util.Date  = La fecha debe cumplir el formato dd/MM/yyyy
+
+usuario = Usuario
+
+verCuenta = Detalle cuenta
+
+volver = Volver

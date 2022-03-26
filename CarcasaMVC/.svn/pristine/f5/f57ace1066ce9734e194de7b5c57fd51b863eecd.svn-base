@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="pruebaAjax" template="/WEB-INF/jsps/pruebaAjax.jsp">
+	</definition>
+	
+	<definition name="baseTiles" template="/WEB-INF/jsps/templates/base.jsp">
+		<put-attribute name="menu-sup"
+			value="/WEB-INF/jsps/templates/menu-sup.jsp" />
+		<put-attribute name="cabecera"
+			value="/WEB-INF/jsps/templates/cabecera.jsp" />
+		<put-attribute name="cuerpo" type="string" value="" />
+		<put-attribute name="menu-izq" type="string" value="" />
+		<put-attribute name="pie" value="/WEB-INF/jsps/templates/pie.jsp" />
+	</definition>
+	
+	<definition name="*/*/*" extends="baseTiles">
+		<put-attribute name="menu-izq"
+			value="/WEB-INF/jsps/templates/{1}/menu-izq.jsp" />
+		<put-attribute name="cuerpo" value="/WEB-INF/jsps/views/{1}/{2}/{3}.jsp" />
+	</definition>
+
+	<definition name="*/*" extends="baseTiles">
+		<put-attribute name="menu-izq"
+			value="/WEB-INF/jsps/templates/{1}/menu-izq.jsp" />
+		<put-attribute name="cuerpo" value="/WEB-INF/jsps/views/{1}/{2}.jsp" />
+	</definition>
+
+	<definition name="*" extends="baseTiles">
+		<put-attribute name="cuerpo" value="/WEB-INF/jsps/views/{1}.jsp" />
+	</definition>
+
+</tiles-definitions>

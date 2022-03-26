@@ -1,0 +1,29 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http security="none" pattern="/estatico/**" />
+	<http security="none" pattern="/logout-success" />
+	<http security="none" pattern="/izfe-app-info" />
+
+	<http use-expressions="true" entry-point-ref="accesosEntryPoint">
+		<intercept-url pattern="/cuentas/new" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/**" access="isAuthenticated()" />
+		
+		<access-denied-handler error-page="/error"/>
+		<custom-filter ref="accesosAuthenticationFilter" position="PRE_AUTH_FILTER"/>
+		<logout logout-url="/logout" logout-success-url="/logout-success" />
+	</http>
+	
+	<beans:bean id="userDetailsService" class="net.izfe.g240.wfiguiarapida.core.security.GuiaRapidaUserDetailsService" />
+	
+	<beans:bean id="accesosEntryPoint" class="net.izfe.g240.wfiseguridadlib.springsecurity.accesos.AccesosEntryPoint">
+		<beans:property name="errorPage" value="/error" />
+	</beans:bean>
+	
+	<beans:import resource="classpath:net/izfe/g240/wfiseguridadlib/springsecurity/accesos/spring-security-accesos.xml"/>
+
+</beans:beans>

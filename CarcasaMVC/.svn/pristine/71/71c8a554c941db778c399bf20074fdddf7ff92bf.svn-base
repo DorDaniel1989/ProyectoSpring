@@ -1,0 +1,7 @@
+analyseLocally=true
+eclipse.preferences.version=1
+projectArtifactId=WFIGuiaRapidaSpringMVCWEB
+projectBranch=
+projectGroupId=net.izfe.g240
+serverUrl=http\://10.0.2.2\:28081/sonar
+version=1

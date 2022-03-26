@@ -1,0 +1,18 @@
+#menu-wrapper {
+	display: none;
+}
+#sidebar {
+	display: none;
+}
+#content {
+	width: 100%;
+}
+.config-menu {
+	display: none;
+}
+.post {
+	width: 100%;
+}
+#verCodigoTextarea {
+	display: none;
+}
